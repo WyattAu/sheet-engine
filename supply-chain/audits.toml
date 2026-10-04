@@ -1,0 +1,7 @@
+
+# cargo-vet audits file
+
+[[audits.sheet-engine]]
+criteria = "safe-to-deploy"
+version = "0.1.0"
+notes = "WyattAu first-party crate; reviewed as the original in-tree implementation."
