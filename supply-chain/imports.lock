@@ -1,2 +1,146 @@
 
 # cargo-vet imports lock
+
+[[publisher.arbitrary]]
+version = "1.4.2"
+when = "2025-08-14"
+user-id = 696
+user-login = "fitzgen"
+user-name = "Nick Fitzgerald"
+
+[[publisher.bumpalo]]
+version = "3.20.3"
+when = "2026-05-22"
+user-id = 696
+user-login = "fitzgen"
+user-name = "Nick Fitzgerald"
+
+[[publisher.derive_arbitrary]]
+version = "1.4.2"
+when = "2025-08-14"
+user-id = 696
+user-login = "fitzgen"
+user-name = "Nick Fitzgerald"
+
+[[audits.bytecodealliance.wildcard-audits.arbitrary]]
+who = "Nick Fitzgerald <fitzgen@gmail.com>"
+criteria = "safe-to-deploy"
+user-id = 696 # Nick Fitzgerald (fitzgen)
+start = "2020-01-14"
+end = "2026-08-21"
+notes = "I am an author of this crate."
+
+[[audits.bytecodealliance.wildcard-audits.bumpalo]]
+who = "Nick Fitzgerald <fitzgen@gmail.com>"
+criteria = "safe-to-deploy"
+user-id = 696 # Nick Fitzgerald (fitzgen)
+start = "2019-03-16"
+end = "2026-08-21"
+
+[[audits.bytecodealliance.wildcard-audits.derive_arbitrary]]
+who = "Nick Fitzgerald <fitzgen@gmail.com>"
+criteria = "safe-to-deploy"
+user-id = 696 # Nick Fitzgerald (fitzgen)
+start = "2020-01-14"
+end = "2026-08-21"
+notes = "I am an author of this crate"
+
+[[audits.bytecodealliance.audits.anes]]
+who = "Pat Hickey <phickey@fastly.com>"
+criteria = "safe-to-deploy"
+version = "0.1.6"
+notes = "Contains no unsafe code, no IO, no build.rs."
+
+[[audits.bytecodealliance.audits.ciborium-io]]
+who = "Pat Hickey <phickey@fastly.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+
+[[audits.bytecodealliance.audits.ciborium-ll]]
+who = "Pat Hickey <phickey@fastly.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+
+[[audits.bytecodealliance.audits.futures-core]]
+who = "Pat Hickey <phickey@fastly.com>"
+criteria = "safe-to-deploy"
+version = "0.3.27"
+notes = "Unsafe used to implement a concurrency primitive AtomicWaker. Well-commented and not obviously incorrect. Like my other audits of these concurrency primitives inside the futures family, I couldn't certify that it is correct without formal methods, but that is out of scope for this vetting."
+
+[[audits.bytecodealliance.audits.futures-core]]
+who = "Pat Hickey <pat@moreproductive.org>"
+criteria = "safe-to-deploy"
+delta = "0.3.28 -> 0.3.31"
+
+[[audits.bytecodealliance.audits.num-traits]]
+who = "Andrew Brown <andrew.brown@intel.com>"
+criteria = "safe-to-deploy"
+version = "0.2.19"
+notes = "As advertised: a numeric library. The only `unsafe` is from some float-to-int conversions, which seems expected."
+
+[[audits.mozilla.audits.crunchy]]
+who = "Erich Gubler <erichdongubler@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.2.3"
+aggregated-from = "https://raw.githubusercontent.com/mozilla-firefox/firefox/main/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.futures-core]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "0.3.27 -> 0.3.28"
+aggregated-from = "https://raw.githubusercontent.com/mozilla-firefox/firefox/main/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.futures-core]]
+who = "Alex Franchuk <afranchuk@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "0.3.31 -> 0.3.34"
+aggregated-from = "https://raw.githubusercontent.com/mozilla/cargo-vet/main/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.oorandom]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-run"
+version = "11.1.5"
+notes = "Small random number generator, explicitly not cryptographically secure, no use of unsafe code, no dependencies"
+aggregated-from = "https://raw.githubusercontent.com/mozilla/glean/main/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.windows-link]]
+who = "Mark Hammond <mhammond@skippinet.com.au>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "A microsoft crate allowing unsafe calls to windows apis."
+aggregated-from = "https://raw.githubusercontent.com/mozilla-firefox/firefox/main/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.windows-link]]
+who = "Erich Gubler <erichdongubler@gmail.com>"
+criteria = "safe-to-deploy"
+delta = "0.1.1 -> 0.2.0"
+aggregated-from = "https://raw.githubusercontent.com/mozilla-firefox/firefox/main/supply-chain/audits.toml"
+
+[[audits.zcash.audits.ciborium-io]]
+who = "Jack Grigg <jack@electriccoin.co>"
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.2.2"
+aggregated-from = "https://raw.githubusercontent.com/zcash/librustzcash/main/supply-chain/audits.toml"
+
+[[audits.zcash.audits.ciborium-ll]]
+who = "Jack Grigg <jack@electriccoin.co>"
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.2.2"
+aggregated-from = "https://raw.githubusercontent.com/zcash/librustzcash/main/supply-chain/audits.toml"
+
+[[audits.zcash.audits.crunchy]]
+who = "Jack Grigg <jack@electriccoin.co>"
+criteria = "safe-to-deploy"
+delta = "0.2.3 -> 0.2.4"
+notes = """
+Build script change is to fix a bug where a path separator for an included file
+was being selected by the target OS instead of the host OS.
+"""
+aggregated-from = "https://raw.githubusercontent.com/zcash/zcash/master/qa/supply-chain/audits.toml"
+
+[[audits.zcash.audits.windows-link]]
+who = "Jack Grigg <jack@electriccoin.co>"
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.2.1"
+notes = "No code changes at all."
+aggregated-from = "https://raw.githubusercontent.com/zcash/librustzcash/main/supply-chain/audits.toml"

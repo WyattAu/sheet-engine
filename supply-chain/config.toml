@@ -4,29 +4,26 @@
 [cargo-vet]
 version = "0.10"
 
+[imports.bytecodealliance]
+url = "https://raw.githubusercontent.com/bytecodealliance/wasmtime/main/supply-chain/audits.toml"
+
+[imports.mozilla]
+url = "https://raw.githubusercontent.com/mozilla/supply-chain/main/audits.toml"
+
+[imports.zcash]
+url = "https://raw.githubusercontent.com/zcash/rust-ecosystem/main/supply-chain/audits.toml"
+
 [[exemptions.aho-corasick]]
 version = "1.1.5"
-criteria = "safe-to-run"
-
-[[exemptions.anes]]
-version = "0.1.6"
 criteria = "safe-to-run"
 
 [[exemptions.anstyle]]
 version = "1.0.14"
 criteria = "safe-to-run"
 
-[[exemptions.arbitrary]]
-version = "1.4.2"
-criteria = "safe-to-deploy"
-
 [[exemptions.autocfg]]
 version = "1.5.1"
 criteria = "safe-to-run"
-
-[[exemptions.bumpalo]]
-version = "3.20.3"
-criteria = "safe-to-deploy"
 
 [[exemptions.cast]]
 version = "0.3.0"
@@ -37,14 +34,6 @@ version = "1.0.5"
 criteria = "safe-to-deploy"
 
 [[exemptions.ciborium]]
-version = "0.2.2"
-criteria = "safe-to-run"
-
-[[exemptions.ciborium-io]]
-version = "0.2.2"
-criteria = "safe-to-run"
-
-[[exemptions.ciborium-ll]]
 version = "0.2.2"
 criteria = "safe-to-run"
 
@@ -84,14 +73,6 @@ criteria = "safe-to-run"
 version = "0.8.23"
 criteria = "safe-to-run"
 
-[[exemptions.crunchy]]
-version = "0.2.4"
-criteria = "safe-to-run"
-
-[[exemptions.derive_arbitrary]]
-version = "1.4.2"
-criteria = "safe-to-deploy"
-
 [[exemptions.either]]
 version = "1.18.0"
 criteria = "safe-to-run"
@@ -107,10 +88,6 @@ criteria = "safe-to-deploy"
 [[exemptions.formula-lang]]
 version = "0.1.1"
 criteria = "safe-to-deploy"
-
-[[exemptions.futures-core]]
-version = "0.3.34"
-criteria = "safe-to-run"
 
 [[exemptions.futures-task]]
 version = "0.3.34"
@@ -156,16 +133,8 @@ criteria = "safe-to-deploy"
 version = "2.8.3"
 criteria = "safe-to-deploy"
 
-[[exemptions.num-traits]]
-version = "0.2.19"
-criteria = "safe-to-run"
-
 [[exemptions.once_cell]]
 version = "1.21.4"
-criteria = "safe-to-run"
-
-[[exemptions.oorandom]]
-version = "11.1.5"
 criteria = "safe-to-run"
 
 [[exemptions.pin-project-lite]]
@@ -306,10 +275,6 @@ criteria = "safe-to-run"
 
 [[exemptions.winapi-util]]
 version = "0.1.11"
-criteria = "safe-to-run"
-
-[[exemptions.windows-link]]
-version = "0.2.1"
 criteria = "safe-to-run"
 
 [[exemptions.windows-sys]]
