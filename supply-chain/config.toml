@@ -304,3 +304,31 @@ criteria = "safe-to-run"
 [[exemptions.zopfli]]
 version = "0.8.3"
 criteria = "safe-to-deploy"
+
+[[exemptions.bitflags]]
+version = "2.13.2"
+criteria = ""safe-to-deploy""
+
+[[exemptions.cfg_aliases]]
+version = "0.2.2"
+criteria = ""safe-to-deploy""
+
+[[exemptions.libc]]
+version = "0.2.191"
+criteria = ""safe-to-deploy""
+
+[[exemptions.nix]]
+version = "0.31.3"
+criteria = ""safe-to-deploy""
+
+[[exemptions.sheet-xlsx]]
+version = "0.1.2"
+criteria = ""safe-to-deploy""
+
+[[exemptions.typed-path]]
+version = "0.12.4"
+criteria = ""safe-to-deploy""
+
+[[exemptions.zip]]
+version = "9.0.5"
+criteria = ""safe-to-deploy""
