@@ -1,4 +1,5 @@
 # sheet-engine
+[![Estate integration](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml/badge.svg)](https://github.com/WyattAu/estate-integration/actions/workflows/ci.yml)
 
 *Spreadsheet calculation engine: dependency-driven incremental recalculation,
 Excel-compatible semantics, volatile function tracking.*
