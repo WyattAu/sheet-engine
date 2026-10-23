@@ -1,4 +1,4 @@
-# Security Policy — sheet-engine
+# Security Policy: sheet-engine
 
 ## Supported versions
 
@@ -23,7 +23,7 @@ considerations for integrators:
 
 - Formulas are parsed with bound resources (`formula-lang` caps nesting
   depth and rejects unbounded references), but hosts should still cap
-  *workbook* size before calling `set_cell` in a loop — the engine does
+  *workbook* size before calling `set_cell` in a loop: the engine does
   not impose a cell-count budget.
 - XLSX input is untrusted ZIP + XML; the codec (`sheet-xlsx`) rejects
   malformed archives with typed errors. `from_xlsx` on attacker-supplied
@@ -31,7 +31,7 @@ considerations for integrators:
   known budget upstream.
 - Formula text round-trips verbatim; systems that re-emit formulas into
   other tools own the escaping there.
-- `#![forbid(unsafe_code)]` — no unsafe blocks exist in this crate.
+- `#![forbid(unsafe_code)]`: no unsafe blocks exist in this crate.
 
 [GitHub security advisories]:
     https://github.com/WyattAu/sheet-engine/security/advisories/new
