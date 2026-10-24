@@ -525,7 +525,7 @@ checksum = "2556abaecddbf05cfb400e47814dc693722a6ff92fd64f34f41f6ca40b0ea32b"
 
 [[package]]
 name = "sheet-engine"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "criterion",
  "formula-lang",
