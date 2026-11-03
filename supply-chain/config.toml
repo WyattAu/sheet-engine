@@ -230,10 +230,6 @@ version = "0.1.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.sheet-xlsx]]
-version = "0.1.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.sheet-xlsx]]
 version = "0.1.2"
 criteria = "safe-to-deploy"
 
@@ -247,7 +243,7 @@ criteria = "safe-to-run"
 
 [[exemptions.syn]]
 version = "2.0.119"
-criteria = "safe-to-deploy"
+criteria = "safe-to-run"
 
 [[exemptions.syn]]
 version = "3.0.6"
@@ -312,10 +308,6 @@ criteria = "safe-to-run"
 [[exemptions.zerocopy-derive]]
 version = "0.8.59"
 criteria = "safe-to-run"
-
-[[exemptions.zip]]
-version = "4.6.1"
-criteria = "safe-to-deploy"
 
 [[exemptions.zip]]
 version = "9.0.5"
