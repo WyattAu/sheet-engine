@@ -207,9 +207,9 @@ dependencies = [
 
 [[package]]
 name = "formula-lang"
-version = "0.1.1"
+version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35045b3663dc017b94d2b5168ba11648d2078f5aa18322a77e7a596aa74740ad"
+checksum = "36c67f3109026f32569bfb67003f69a2581b71d5153e1b1b1857f7e2835c8d78"
 dependencies = [
  "libm",
  "thiserror",
@@ -519,9 +519,9 @@ dependencies = [
 
 [[package]]
 name = "sheet-core"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2556abaecddbf05cfb400e47814dc693722a6ff92fd64f34f41f6ca40b0ea32b"
+checksum = "144c83e05883baae7b45a3caf68a6d29a0392d9b649b9826c4c2e0ce307d36ac"
 
 [[package]]
 name = "sheet-engine"
@@ -535,9 +535,9 @@ dependencies = [
 
 [[package]]
 name = "sheet-xlsx"
-version = "0.1.2"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3eab0629254f010ba59db52d4b3e31478d4d5bc882299342856285b1a617fdfa"
+checksum = "a1a1a06723edd4340e1c4f842f4ed68fdfbaaffccbad0d4d835cea24485c7d87"
 dependencies = [
  "quick-xml",
  "sheet-core",
